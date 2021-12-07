@@ -1,0 +1,32 @@
+.endgame {
+  width: 100%;
+  height: 100vh;
+  background-color: #130f40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &-nameUser {
+    color: #3498db;
+    font-size: 4rem;
+  }
+  &-score {
+    color: #e74c3c;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  &-idTest {
+    color: #f1c40f;
+  }
+  &-join {
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    background-color: #3498db;
+    padding: 1rem;
+    color: white;
+    box-shadow: 0 0 1rem 0 #5bb4f0;
+    text-decoration: none;
+  }
+}
