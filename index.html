@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Vua Tiếng Việt</title>
+</head>
+<body>
+
+  <div class="name ">
+    <input type="text" class="name-input" placeholder="Nhập tên" onfocus="focusName()" onkeyup="enterSubmit(event)">
+     <div class="name-submit" onclick="submitName()" >Xác nhận</div>
+     <div class="name-check check-input">Vui lòng nhập tên đầy đủ</div>
+  </div>
+
+  <div class="app check-end">
+    <div class="progress">
+      <div class="progress-bar">
+        <div class="progress-percent"></div>
+      </div>
+    </div>
+    <div class="time">
+      <div class="time-box">
+        <div class="time-count">..</div>
+      </div>
+     
+    </div>
+    <div class="answer">
+      <div class="answer-show"></div>
+    </div>
+
+    <div class="show-result">
+      <div class="question">
+        <h3 class="question-loading">Loading...</h3>
+        <div class="question-show"></div>
+       
+      </div>
+      <div class="check">
+        <div class="check-result">
+          <div class="check-result-button hideActive" onclick="handleCheck()">Xác nhận</div>
+        </div>
+
+        <div class="check-true activeNone">
+         
+          <div class="check-true-button" onclick="handleNext()">Tiếp tục</div>
+        </div>
+
+        <div class="check-false activeNone">
+          
+          <div class="check-false-button" onclick="handleNext()">Tiếp tục</div>
+        </div>
+      </div>
+      <div class="show-result-answer">
+        <span class="show-result-answer-true activeNone">
+          <img src="./img/check-circle-solid.svg" />
+         Chính xác!
+         
+        </span>
+        
+        <span class="show-result-answer-false activeNone">
+          <img src="./img/times-circle-solid.svg" />
+          Sai rồi!
+          
+        </span>
+        <p class="show-answer"></p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="endgame check-end">
+    <h1 class="endgame-idTest"></h1>
+    <h3 class="endgame-nameUser"></h3>
+    <p class="endgame-score"></p>
+   
+    <a  href="https://www.facebook.com/groups/geldunchannel" class="endgame-join">Join Group</a>
+  </div>
+  
+  <script src="./main.js"></script>
+  <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+</body>
+</html>
