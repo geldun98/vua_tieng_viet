@@ -3,7 +3,7 @@ let information;
 let progress;
 let firstIdQuestion = 15;
 let lastIdQuestion = 24;
-let idTest = '5 giá trị cốt lõi';
+let idTest = 'Tên tỉnh thành';
 let DataQuestion;
 let idQuestion = 0;
 let score = 0;
