@@ -79,7 +79,7 @@ function handleAnswerQuestionButton(e) {
 }
 
 function startQuiz(question) {
-  Time(30);
+  Time(5);
 
   arrayAnswer = [];
   const newIdQuestion = idQuestion + 1;
